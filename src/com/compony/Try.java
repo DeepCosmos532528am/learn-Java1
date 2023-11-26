@@ -28,7 +28,7 @@ while (repeat < 7){
             }
             System.out.println(i2);
 
-repeat++;
+                repeat++;
         }
 
 

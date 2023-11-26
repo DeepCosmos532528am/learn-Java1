@@ -47,7 +47,7 @@ public class CWH_20_RockPaper_exercise {
             } else {
                 System.out.println("Player #3 :\tscissor");
             }
-//**************************************************************************************(Putting Conditions-OR Gate in Conditions-AND Gate)*********************************************************************************
+            //**************************************************************************************(Putting Conditions-OR Gate in Conditions-AND Gate)*********************************************************************************
 
             if ((s1.equals("r") && r1 == 0 && r2 == 0) || (s1.equals("p") && r1 == 1 && r2 == 1) || (s1.equals("s") && r1 == 2 && r2 == 2)) {
                 System.out.println("\tThe Match is Draw ");

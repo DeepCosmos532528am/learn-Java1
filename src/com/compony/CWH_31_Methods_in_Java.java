@@ -62,7 +62,7 @@ public class CWH_31_Methods_in_Java {
             c1 = a1 + b1;
         } else {
             c1 = (a1 + b1) * 5;
-        }
+        }.
         System.out.println( c1 );*/
         int uu = 1;
         int yy = 2;
