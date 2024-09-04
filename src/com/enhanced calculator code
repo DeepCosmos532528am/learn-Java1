@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        for (int yuou = 0; yuou <= 10; yuou++) {
+            System.out.println("Enter your Hindi Marks");
+            int H = sc.nextByte();
+
+            System.out.println("Enter your Sanskrit Marks ");
+            int E = sc.nextInt();
+
+            System.out.println("Enter your Maths Marks");
+            int M = sc.nextInt();
+
+            System.out.println("Enter your SocialStudies Marks ");
+            int P = sc.nextByte();
+
+            System.out.println("Enter your English Marks ");
+            int C = sc.nextInt();
+
+            float sum = (H + E + M + P + C) / 5f;
+
+
+            System.out.println("please enter your registered password to see your result !! ");
+            String pass = "sachins";
+            
+            String password = sc.next();
+            String password2 = null;
+            if (sum > 33.0 && H > 33 && E > 33 && M > 33 && P > 33 && C > 33 && password.equals(pass)) {
+                System.out.println("Congratulations !! you are passed  \uD83D\uDE0A ,,\n\t Don't Worry!!,, nobody will be able to see your pecentage without your permission \n If you want to see your percentage,\n then please enter your registered Password below");
+                System.out.println(" \n you can put 'no' if you do not want to see percentage \n\t Password:  ");
+
+            } else if (password.equals(pass)) {
+                System.out.print("  Try Your Best Next Time \uD83D\uDE0A ,, \n\t  Don't Worry!!,, nobody will be able to see your pecentage without your permission \n If you want to see your percentage,\n then please enter your registered Password below");
+                System.out.println("you can put 'no' if you do not want to see percentage \n\t Password:  ");
+
+            }
+          
+
+               do{ password2 = sc.next();
+                   switch (password2) {
+                    case "rain" -> System.out.println("you got " + sum + "% \n Thank you so much for using the Calculator ");
+                    case "no" -> System.out.println(" Thank you so much for using the Calculator !!  ");
+                    default -> System.out.println(" It seems your input is mistaken! please Try Again with correct input ");
+                }}while( password2 != "rain" || password2 != "no");
+
+                }
+}
