@@ -1,4 +1,4 @@
-package com.compony;
+package com.mycompony;
 public class CWH_33_Varargs {
     public static int firstMethod( int a, int b ){
         int total;
