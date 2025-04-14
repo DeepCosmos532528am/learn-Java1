@@ -12,6 +12,10 @@ float g = 89f;
 long j =5 ;
 double d = g+j;
         System.out.println(d);
+
+        char symb = '\u2764';
+        System.out.println(symb); // Heart character
+
     }
 
 }
