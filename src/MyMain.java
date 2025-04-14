@@ -9,7 +9,7 @@ package com.mycompony.src;//CBSE Board Percentage calculator
 this is lenovo fault or window as the OS*/
 import java.util.Scanner;
 
-public class Main {
+public class MyMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         for (int yuou = 0; yuou <= 10; yuou++) {
