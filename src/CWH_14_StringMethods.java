@@ -5,7 +5,7 @@ public class CWH_14_StringMethods {
     public static void main(String[] args) {
         //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
         //ALL THE METHODS LISTED BELOW ARE ONLY and ONLY FOR STRINGS and not for INT, FLOAT,  SHORT or anymore other types of data types
-        // first method is [ name.length() ]  this method is used to measure the length of the string
+        // first method is [ stringVariable.length() ]  this method is used to measure the length of the string
         System.out.println("no. 1 ");
 
         String s = "sachin sharma";
@@ -19,163 +19,149 @@ public class CWH_14_StringMethods {
         System.out.println("sachin sharma".length());  //method 3
         //OR
         System.out.println(s.length());  // method 4
-        //{{ NOTE : the four diffrent-diffrent types of methods that we have used above and divided them in four diffrent types will be applicable in all the following
-        //types of String Methods ,,Actually these all four types of  methods gives us the same output , they are toh just diffrent- diffrent ways to take output
+        //NOTE : the four separate types of methods that we have used above and divided them in four different types will be applicable in all the following
+        //types of String Methods , Actually these all four types of  methods gives us the same output , they are just separate ways to take output
         // we can use any one of them of our choice...
 
 
         //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 2");
-        //Second method is  [ name.trim() ] this method is used to remove unwanted white space from the String
+        //Second method is  [ stringVariable.trim() ] this method is used to remove unwanted white space from the String
         String s2 = "        sachin sharma      ";
         System.out.println(s2);
-        //here we are printing normally  without the trim method ,,so the output will include the white space too
+        //here we are printing normally  without the trim method ,so the output will include the white space too
 
 
-        String S = s2.trim();  // this  will remove the white space from the beginning and from the ending of the string
-        System.out.println(S);
+        String trimmedString = s2.trim();  // this will remove the white space from the beginning and from the ending of the string
+        System.out.println(trimmedString);
 
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 3 ");
-        //Third method is  [ name.toLowerCase() ] this method is used to convert the string from Upper Case to Lower Case
-        String s3 = "SACHIN SHARMA";
-        String SS = s3.toLowerCase();
-        System.out.println(SS);
+// Third method is [ stringVariable.toLowerCase() ] - this method is used to convert the string from Upper Case to Lower Case
+        String originalUpperCase = "SACHIN SHARMA";
+        String lowerCaseString = originalUpperCase.toLowerCase();
+        System.out.println(lowerCaseString);
 
-
-        //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 4 ");
-        // Fourth Method is [ name.toUpperCase() ] this method is used to convert the string from Lower Case to Upper Case
-        String s4 = "sachin sharma";
-        String SSS = s4.toUpperCase();
+// Fourth Method is [ stringVariable.toUpperCase() ] - this method is used to convert the string from Lower Case to Upper Case
+        String originalLowerCase = "sachin sharma";
+        String upperCaseString = originalLowerCase.toUpperCase();
 
-        System.out.println(SSS);
-        System.out.println(s4.toUpperCase());
+        System.out.println(upperCaseString);
+        System.out.println(originalLowerCase.toUpperCase());
 
-
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 5");
-        // Fifth Method is [ name.substring( int start ) ] this method is used to determine the String's  starting  point to print the words
-        String s5 = "Sachin Sharma ";
-        String SSSS = s5.substring(3);
-        System.out.println(SSSS);
+// Fifth Method is [ stringVariable.substring(startIndex) ] - this method is used to get the substring starting from a specific index
+        String sentenceForStartOnly = "Sachin Sharma ";
+        String subStringFromStart = sentenceForStartOnly.substring(3);
+        System.out.println(subStringFromStart);
 
-
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 6 ");
-        // Sixth Method is [ name.substring( int start, int ending) ] this method is used to determine the String's starting and ending point to print the words
+// Sixth Method is [ stringVariable.substring(startIndex, endIndex) ] - this method is used to get a substring between specific start and end indexes
 
-        String s6 = "sachin sharma jai shree ram ";
-        String SSSSS = s6.substring(14, 28);
-        // In Strings the first letter will always be considered at the number 0  and second one would always be at 1 .Similarly all the following letters including space like third ,fourth, fifth
-        //    will be at 2, 3 and 4 respectively ,,and this sequence will be followed as long as the String Goes...
-        System.out.println(SSSSS);
+        String sentenceForStartEnd = "sachin sharma jai shree ram ";
+        String subStringRange = sentenceForStartEnd.substring(14, 28);
+        System.out.println(subStringRange);
 
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 7");
-        // Seventh method is [name.replace(target , replacement) ]this method is used to replace a particular word with N-other word
-        String s7 = "sachin sharma ";
-        String SSSSSS = "Sachin sharma".replace("sharma", "musician");
-        System.out.println(SSSSSS);
+// Seventh method is [ stringVariable.replace(target, replacement) ] - this method is used to replace a specific word or character with another
+        String replaceOriginal = "sachin sharma ";
+        String replacedString = "Sachin sharma".replace("sharma", "musician");
+        System.out.println(replacedString);
 
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 8 ");
-        //Eighth Method is [ name.startsWith() ] it is used to ensure whether the given String is starting with that particular String (word) or not. It can also be checked with a letter instead of any word. But the condition is that we have to put double inverted comma ("  ") for String/word as well as for char/letter
-        String s8 = "Sachin";
-        Boolean SSSSSSS = s8.startsWith("Sachin");
-        System.out.println(SSSSSSS);
+// Eighth Method is [ stringVariable.startsWith("prefix") ] - this method checks if the string starts with the given prefix
+        String checkStart = "Sachin";
+        Boolean doesStart = checkStart.startsWith("Sachin");
+        System.out.println(doesStart);
 
-
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 9");
-        //Ninth Method is [ name.endsWith() ] It is used to ensure whether the given String is ending  with that particular String (word) or not. It can also be checked with a letter instead of any word. But the condition is that we have to put double inverted comma ("  ") for String/word as well as for char/letter
+// Ninth Method is [ stringVariable.endsWith("suffix") ] - this method checks if the string ends with the given suffix
+        String checkEnd = "Sachin ";
+        boolean doesEnd = checkEnd.endsWith("n");
+        System.out.println(doesEnd);
 
-        String s9 = "Sachin ";
-        boolean SSSSSSSS = s9.endsWith("n");
-        System.out.println(SSSSSSSS);
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 10");
-        // Tenth Method is [ name.charAt(int)]  this is used to return any Character and a particular index position
-        String s10 = "sachin sharma ";
-        char SSSSSSSSS = s9.charAt(1);
-        System.out.println(SSSSSSSSS);
+// Tenth Method is [ stringVariable.charAt(index) ] - this method returns the character at a specific index
+        String charCheck = "sachin sharma ";
+        char charAtIndex = checkEnd.charAt(1);
+        System.out.println(charAtIndex);
 
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 11");
-        // Eleventh Method is [ name.indexOf ()] this method is used to find the index number of a given string or character (only double inverted comma needed {" "}, single inverted is not compulsorily needed . We can put char as well as any String value in it
+// Eleventh Method is [ stringVariable.indexOf("charOrString") ] - this method returns the index of the first occurrence of the specified character or string
+        String indexExample = "sachin sharma ";
+        int firstIndex = indexExample.lastIndexOf("s");
+        System.out.println(firstIndex);
 
-        String s11 = "sachin sharma ";
-        int ii = s11.lastIndexOf("s");
-        System.out.println(ii);
-
-
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 12");
-        //  Twelth Method  is  [ name.indexOf() method ko dusre tareeke se upypog karne ka tareeka ] this method starts finding the index of the entered number from the beginning of the String and this method  is used to find the index of  a particular Character
-//        Actually,, if there is more than one Character of same type than the java would get confuse and it will always  show the index number of the character that it will find matching with your
-//        entered  I think You are Confused!! Wait and see the example below and compare with the above one...  You will Find Your Doubt has been Solved
-        String s12 = "sachin sharma";
-        int iii = s12.indexOf("s", 3);// here by giving  "FromIndex " we have to told java that "you have to show the index of s but  from index no. 5  . That's why it is showimg us the index no. 7 on running the program.
-        System.out.println(iii);
+// Twelfth Method is [ stringVariable.indexOf("char", fromIndex) ] - this method returns the index of a character starting search from a given index
+        String indexWithOffset = "sachin sharma";
+        int offsetIndex = indexWithOffset.indexOf("s", 3);
+        System.out.println(offsetIndex);
 
-//NOTE// = the java will show the output -1 if the entered substring doesnot exist anywhere in the enterd . It Starts Searching from the beginning of the String
-        // or by considering the entered index as the starting point and shows the index of the very first String/character that it finds matching with your entered String or Char value ,
-
-
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 13");
-        //Thirteenth method is [name.lastIndexOf() ] this method is used to find the index from last , it starts counting from
-        //last
+// Thirteenth Method is [ stringVariable.lastIndexOf("char") ] - this method returns the last index of the specified character
+        String lastIndexExample = "sachin sharma";
+        int lastIndex = lastIndexExample.lastIndexOf("a");
+        System.out.println(lastIndex);
 
-
-        String s13 = "sachin sharma";
-        int iv = s13.lastIndexOf("a");
-        System.out.println(iv);
-
-
-        //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         System.out.println("no. 14");
-        //Fourteenth Method is [ name.lastIndexOf(" ")  method ko dusre tareeke se upypog karne ka tareeka  ] this method starts
-        //searching the entered value from the last of the String and  is used to find the index of a  particular Character from the back side in the case of more than one character of entered type
-        // Actually,, if there is more than one Character of same type than the java would get confuse and it will always  show the index number  of the character  that it will find matching with your
-//        entered from the back/last  side  I think You are Confused!! Wait and see the example below and compare with the above one...  You will Find Your Doubt has been Solved
+// Fourteenth Method is [ stringVariable.indexOf("char", fromIndex) ] again - used to find character from specific index if it appears multiple times
+        String anotherIndexExample = "sashin shasma";
+        int indexWithStart = anotherIndexExample.indexOf("s", 3);
+        System.out.println(indexWithStart);
 
-        String s14 = "sashin shasma";
-        int v = s14.indexOf("s", 3);
-        System.out.println(v);
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        System.out.println("no. 15");
+// Fifteenth Method is [ stringVariable.equals("value") ] - this method checks if two strings are exactly equal (case-sensitive)
+        String matchExact = "sachin sharma";
+        boolean isEqual = matchExact.equals("sachin sharma");
+        System.out.println(isEqual);
 
-        //  the java will show the output -1 if the entered substring doesnot exist anywhere in the enterd variable . It Starts Searching from the ending of the String or by considering the entered index number
-        //   as the very last character/String and shows the index of the string or char that it finds matching with your entered String or Char value ,
-        // SOME MORE TO EXPLORE HERE
+// this method is Case Sensitive
 
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        System.out.println("no. 15");//Fifteenth Method is [ name.equals(" ") ] this method is used to check whether the entered string value is present in the variable or not
-        String s15 = "sachin sharma";
-        boolean SSSSSSSSSS = s15.equals("sachin sharma");
-        System.out.println(SSSSSSSSSS);
-
-        // this method is Case Sensitive method
-
-
-        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        System.out.println("no. 16");// Sixteenth and the last method is [ name.equalsIgnoreCase( )] this method is used to check whether the entered string value is present in the variable or not .It is same as the above method but the thing that is special in it is nothing but the Non-Sensitivity Of Case
-        String s16 = "sachin sharma";
-        boolean SSSSSSSSSSS = s16.equalsIgnoreCase("SaChIn ShArma");
-        System.out.println(SSSSSSSSSSS);
-        // this method is not Case Sensitive method ,,it only focuses on the alphabets instead of also focusing on Cases
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        System.out.println("no. 16");
+// Sixteenth Method is [ stringVariable.equalsIgnoreCase("value") ] - this method checks if two strings are equal ignoring case
+        String ignoreCaseMatch = "sachin sharma";
+        boolean isEqualIgnoreCase = ignoreCaseMatch.equalsIgnoreCase("SaChIn ShArma");
+        System.out.println(isEqualIgnoreCase);
+// this method is not Case Sensitive method ,it only focuses on the alphabets instead of also focusing on Cases
 
 
+        System.out.println("no. 17");// Seventeenth method is [ stringVariable.compareTo( )] this method is used to compare two strings lexicographically. It is similar to the equals() method but the thing that is special in it is that it stops as soon as a difference is found and returns a positive, negative, or zero value based on the comparison. Lexicographical means comparing strings based on the dictionary order of their characters.
 
-        //                 </ Here Our all 16 methods of Strings has now been Finished />
+        String s17_1 = "Sachin Sharma";
+        String s17_2 = "Sachin sharma";
+        int result = s17_1.compareTo(s17_2);
+        System.out.println(result);
+
+// When the result is 0, it means both strings are **equal** (i.e., they are lexicographically identical).
+// When the result is negative, it means the first string is **lexicographically smaller** than the second string.
+// When the result is positive, it means the first string is **lexicographically greater** than the second string.
+// The comparison stops as soon as the first difference is found.
 
 
+        //                 </ Here Our all 17 methods of Strings has now been Finished />
 
-     //   The escape sequence characters
+
+        //   The escape sequence characters
 
         System.out.println("sachin sharma \nis a good boy ");
 
 
-
-    }}
+    }
+}
 
 // ROUGH WORK 2 CLASS ME EK ERROR AA RHA H JISME DOUBT AA RHA H  USS DOUBT K0 CLEAR KARNA H STRING VALUE KO PRINT KARNE ME . USSE ZRAA CLEAR KAR LO ZALDI SE
