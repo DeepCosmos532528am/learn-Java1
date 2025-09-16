@@ -1,3 +1,5 @@
+package com.compony;
+
 //CBSE Board Percentage calculator
 /*why sometimes the hovering donot happen in my LOQ lenovo ,
  on task bar when  put my cursor over the various apps present on t
@@ -9,7 +11,7 @@
 this is lenovo fault or window as the OS*/
 import java.util.Scanner;
 
-public class Main {
+ public class MyMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         for (int yuou = 0; yuou <= 10; yuou++) {

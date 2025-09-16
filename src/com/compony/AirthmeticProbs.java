@@ -10,7 +10,7 @@ public class AirthmeticProbs {
         System.out.println("Hello " + username + "!,\nWhat type of problems you would like to practice today?\n");
         System.out.println("Please give me your preference by writing below- \n\t  'a' or '+' for addition, \n\t  's' or '-' for subtraction, \n\t  'd' or '/' for division, \n\t& 'm1' or '*' for multiplication.");
 
-        String asdm = sc.next();
+        String asdm = sc.next(); // to choose what to practice.
         for (int i = 0; i <= 10; i++) {
         int r1 = r.nextInt(10); // Here r1 r2 r3 r4 , are the methods to generate the random numbers automatically on which the question will generate automatically
         int r2 = r.nextInt(10);
@@ -27,10 +27,12 @@ public class AirthmeticProbs {
                 int answer = sc.nextInt();
                 int ans = r1 + r2 + r3 + r4;
                 if (answer == ans) {
-                    System.out.println("Very good " + username + "! The answer is correct. \n\t r1 + r2 + r3 + r4 = " + ans);
+                    System.out.printf("Very good " + username + "! The answer is correct. %d + %d + %d + %d = %d\n", r1, r2, r3, r4, ans);
                 } else {
-                    System.out.println("Oh...! the Correct answer is" + ans + "\n Don't Mind , move to next");
+                    System.out.println("Oh...! the Correct answer is" + ans + "\n Don't Mind learn and move to next");
                 }
+
+
 
                 //***********************************************Multiplication*******************************************************************************************************************************************************
 
