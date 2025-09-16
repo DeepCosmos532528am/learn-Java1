@@ -9,9 +9,10 @@ package com.compony;
   t happendd for half  or a minute only, then corrected previously
   . Everthing started working properly .
 this is lenovo fault or window as the OS*/
+
 import java.util.Scanner;
 
- public class MyMain {
+public class MyMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         for (int yuou = 0; yuou <= 10; yuou++) {
@@ -39,36 +40,37 @@ import java.util.Scanner;
             String password;
 
 
-           do {
+            do {
 
 
-               password = sc.next();
-               // The method below is Another way to get output as same as the Switch case is giving above, but
-               if (sum > 33.0 && H > 33 && E > 33 && M > 33 && P > 33 && C > 33 && password.equals(pass)) {
-                   System.out.println("Congratulations !! you are passed  \uD83D\uDE0A ,,\n\t Don't Worry!!,, nobody will be able to see your pecentage without your permission \n If you want to see your percentage,\n then please enter your registered Password below");
-                   System.out.println(" \n you can put 'no' if you do not want to see percentage \n\t Password:  ");
+                password = sc.next();
+                // The method below is Another way to get output as same as the Switch case is giving above, but
+                if (sum > 33.0 && H > 33 && E > 33 && M > 33 && P > 33 && C > 33 && password.equals(pass)) {
+                    System.out.println("Congratulations !! you are passed  \uD83D\uDE0A ,,\n\t Don't Worry!!,, nobody will be able to see your pecentage without your permission \n If you want to see your percentage,\n then please enter your registered Password below");
+                    System.out.println(" \n you can put 'no' if you do not want to see percentage \n\t Password:  ");
 
-               } else if (password.equals(pass)) {
-                   System.out.print("  Try Your Best Next Time \uD83D\uDE0A ,, \n\t  Don't Worry!!,, nobody will be able to see your pecentage without your permission \n If you want to see your percentage,\n then please enter your registered Password below");
-                   System.out.println("you can put 'no' if you do not want to see percentage \n\t Password:  ");
+                } else if (password.equals(pass)) {
+                    System.out.print("  Try Your Best Next Time \uD83D\uDE0A ,, \n\t  Don't Worry!!,, nobody will be able to see your pecentage without your permission \n If you want to see your percentage,\n then please enter your registered Password below");
+                    System.out.println("you can put 'no' if you do not want to see percentage \n\t Password:  ");
 
-               }else if(password.equals("no")){
-                   System.out.println(
-                      "Thank you for using me :)"
-                   );break;
+                } else if (password.equals("no")) {
+                    System.out.println(
+                            "Thank you for using me :)"
+                    );
+                    break;
 
-               }else {
-                   System.out.println("Cannot Intiate to further step, please input correct password ");
-               }
-           }while( !password.equals("sachins"));
+                } else {
+                    System.out.println("Cannot Intiate to further step, please input correct password ");
+                }
+            } while (!password.equals("sachins"));
 
-            String password2 =null;
+            String password2 = null;
 
 
             do {
 
 
-                                     password2 = sc.next();
+                password2 = sc.next();
                 if (password.equals("no")) {
 
 
@@ -173,4 +175,5 @@ import java.util.Scanner;
         }
 
 
-    }}
+    }
+}

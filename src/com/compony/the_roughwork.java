@@ -1,6 +1,5 @@
 package com.compony;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 

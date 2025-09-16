@@ -1,3 +1,5 @@
+package com.compony;
+
 import java.util.Scanner;
 
 

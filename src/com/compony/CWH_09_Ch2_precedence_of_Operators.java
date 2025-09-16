@@ -2,8 +2,16 @@ package com.compony;
 import java.util.Scanner;
 public class CWH_09_Ch2_precedence_of_Operators {
     public static void main(String[] args) {
-Scanner sc = new Scanner (System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("the precedence and associativity");
+        //Precedence is about which operator will be evaluated first in the expression!
+        //The Precedence in Java Operators:
+        //Addition (+) and Subtraction (-) have the same precedence.
+
+        //Multiplication (*), Division (/), and Modulus (%) also have the same precedence.
+
+        //However, multiplication, division, and modulus operators have higher precedence than addition and subtraction.
+
   /*      int h = 10/10*4;
 boolean q  = 2*10/5== h;
         System.out.println(h);
@@ -41,9 +49,19 @@ boolean q  = 2*10/5== h;
         System.out.println(e); */
         double x = 5;
         double y = 8;
-        double  k =y/ x +y;
-        System.out.println(k );
-    // 6/2 = 3
+        double k = y / x + y;
+        System.out.println(k);
+        // 6/2 = 3
+        System.out.printf("The calculation is as follow %d", 2 * 1 / 4 - 2 + 2 * 4);
+//Associativity is about from which direction the evaluation will start , if we have two operator of same precedence
+        // Precedence in Java Operators:
+        //Addition (+) and Subtraction (-) have the same precedence.
+        //Multiplication (*), Division (/), and Modulus (%) also have the same precedence.
 
+       // Catch it!!
+      //  For +, -, *, /, %: Left to Right (evaluated from left to right in expressions)
+
+       // For assignment operators (=): Right to Left
     }
+
 }

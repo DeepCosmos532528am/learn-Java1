@@ -1,7 +1,5 @@
 package com.compony;
 
-import java.util.Scanner;
-
 public class CWH_21_Ch5_Loops {
     public static void main(String[] args) {
         System.out.println("Hello World!!");
